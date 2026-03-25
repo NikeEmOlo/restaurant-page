@@ -88,7 +88,8 @@ header {
     }
 
     .nav-button:hover {
-        background-color: rgb(225, 91, 7);
+        background-color: #99c32d;
+        color: black;
         border-width: 1px;
     }
 }
