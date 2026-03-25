@@ -1,0 +1,134 @@
+/* Template */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+/* Fonts */
+@font-face {
+    font-family: 'Urbanist';
+    src: url('./fonts/Urbanist-Regular.woff2') format('woff2'),
+        url('./fonts/Urbanist-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bowlby';
+    src: url('./fonts/BowlbyOneSC-Regular.woff2') format('woff2'),
+        url('./fonts/BowlbyOneSC-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* end of fonts */
+
+:root {
+    --button-font: 1em/1 'Urbanist', 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 2vw 16px 0 16px;
+
+    nav {
+        display: flex;
+        gap: 24px;
+    }
+
+    .nav-button {
+        width: 100px;
+        padding: 8px 0 4px 0 ;
+        border: 2px solid white;
+        border-radius: 5px 5px 0 0;
+
+        background-color: black;
+        color: white;
+        font: var(--button-font)
+    }
+
+    .nav-button:active {
+        background-color: black;
+        color: rgb(225, 69, 7);
+        border: none;
+        font-family: 'Bowlby', sans-serif;
+    }
+
+    .nav-button:hover {
+        background-color: rgb(225, 91, 7);
+        border-width: 1px;
+    }
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 4% 0;
+    border-radius: 20px;
+    background-color: black;
+}
+
+#home-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+}
+
+.home-title-txt {
+    color: white;
+    font-family: 'Bowlby', sans-serif;
+    font-size:175px;
+    margin: 0;
+    padding: 0;
+    line-height: 0.9;
+    text-align: center;
+}
+
+.home-img-wrapper{
+    display: flex;
+    margin-top: -7%;
+}
+
+.ramen {
+    height: min(850px, 80vw);
+    z-index: 10;
+}
