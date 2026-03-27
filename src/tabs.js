@@ -1,10 +1,11 @@
 import { renderHome } from "./home.js";
 import {renderMenu} from "./menu.js"
+import renderContact from "./contact.js";
 
 let currentTab;
 let home;
 let menu;
-// let contact;
+let contact;
 
 function setTabListeners(){
     const tabs = document.querySelectorAll(".nav-button");
@@ -16,9 +17,9 @@ function setTabListeners(){
 function loadTabs(){
     home = renderHome();
     menu = renderMenu();
-    // contact = renderContact();
+    contact = renderContact();
     currentTab = home;
-    return home // menu, contact}
+    return {home, menu, contact}
 }
 
 function tabController(e){

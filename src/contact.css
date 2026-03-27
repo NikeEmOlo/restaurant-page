@@ -1,0 +1,67 @@
+#contact {
+    gap: 10vh;
+}
+
+table {
+    color: white;
+    width: 30%;
+    line-height: 1.3;
+    font-family: "Bebas Neue", sans-serif;
+    
+    th {
+        text-align: right;
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.571);
+    }
+
+    th::after{
+        content: " :"
+    }
+
+    td {
+        padding-left: 1.5em;
+        font-size: 20px;
+    }
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    width: 50%;
+
+    input, textarea {
+        width: 50%;
+    }
+
+    input, textarea {
+        background-color: black;
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.378);
+        border-radius: 5px;
+        font-family: 'Urbanist';
+        font-size: 18px;
+        padding: 4px 8px;
+    }
+
+    input::placeholder, textarea::placeholder {
+        color: rgba(255, 255, 255, 0.739);
+    }
+
+    button {
+        width: 20%;
+        padding: 4px;
+        border-radius: 2px;
+        border: none;
+        font-family: 'Bebas Neue';
+        font-size: 24px;
+    }
+
+    button:hover {
+        background-color: greenyellow;
+    }
+
+
+}
