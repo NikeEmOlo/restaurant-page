@@ -1,4 +1,5 @@
-import { buildHome } from "./home.js";
+import "./styles.css"
+import { setTabListeners, loadTabs } from "./tabs.js";
 
-buildHome();
-
+setTabListeners();
+loadTabs();

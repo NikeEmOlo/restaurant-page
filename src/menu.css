@@ -1,0 +1,66 @@
+:root {
+    --category-font: 1.2em/1 'Bebas Neue', 'Segoe UI', sans-serif;
+    --dish-name-font: 2em/1 'Bebas Neue', 'Segoe UI', sans-serif;
+    --description-font: 1em/1 'Urbanist'
+
+}
+
+
+
+#menu {
+    /* border: 1px solid, greenyellow; */
+    gap: 2em;
+}
+
+.section-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 70%;
+
+    .section-hdr {
+        font: var(--category-font);
+    }
+}
+
+h2 {
+    color: white;
+    color: greenyellow;
+}
+
+.dish-card {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    width: 100%;
+    
+    h3, h4, p {
+        color: white;
+    }
+
+    h3 {
+        font: var(--dish-name-font);
+    }
+
+    p {
+        font-family: 'Urbanist', 'Segoe UI', sans-serif;
+        font-size: 18px;
+    }
+
+    .dish-num {
+        text-align: right;
+        font-family: 'Bebas Neue', 'Segoe UI', sans-serif;
+        font-size: 24px
+    }
+
+    .dish-num::before {
+        content: "#";
+    }
+
+    .price {
+        text-align: right;
+        font-family: 'Urbanist';
+        font-size: 18px;
+    }
+}

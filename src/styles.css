@@ -38,18 +38,19 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 @font-face {
-    font-family: 'Bowlby';
-    src: url('./fonts/BowlbyOneSC-Regular.woff2') format('woff2'),
-        url('./fonts/BowlbyOneSC-Regular.woff') format('woff');
+    font-family: 'Bebas Neue';
+    src: url('./fonts/BebasNeue-Regular.woff2') format('woff2'),
+        url('./fonts/BebasNeue-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
+
 /* end of fonts */
 
 :root {
-    --button-font: 1em/1 'Urbanist', 'Segoe UI', sans-serif;
+    --button-font: 2em/1 'Bebas Neue', 'Segoe UI', sans-serif;
 }
 
 body {
@@ -62,35 +63,32 @@ body {
 header {
     display: flex;
     justify-content: center;
-    padding: 2vw 16px 0 16px;
+    padding: 10vh 16px 0 16px;
 
     nav {
         display: flex;
-        gap: 24px;
+        gap: 40px;
     }
 
     .nav-button {
         width: 100px;
         padding: 8px 0 4px 0 ;
-        border: 2px solid white;
-        border-radius: 5px 5px 0 0;
+        border: none;
+        border-radius: 2px;
 
         background-color: black;
         color: white;
         font: var(--button-font)
     }
 
-    .nav-button:active {
+    .nav-button.active {
         background-color: black;
-        color: rgb(225, 69, 7);
-        border: none;
-        font-family: 'Bowlby', sans-serif;
+        color: #ff2200;
     }
 
     .nav-button:hover {
-        background-color: #99c32d;
+        background-color: #ff2200;
         color: black;
-        border-width: 1px;
     }
 }
 
@@ -106,7 +104,7 @@ header {
     background-color: black;
 }
 
-#home-wrap {
+.tab-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,22 +112,3 @@ header {
     width: 100%;
 }
 
-.home-title-txt {
-    color: white;
-    font-family: 'Bowlby', sans-serif;
-    font-size:175px;
-    margin: 0;
-    padding: 0;
-    line-height: 0.9;
-    text-align: center;
-}
-
-.home-img-wrapper{
-    display: flex;
-    margin-top: -7%;
-}
-
-.ramen {
-    height: min(850px, 80vw);
-    z-index: 10;
-}
