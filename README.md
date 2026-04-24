@@ -4,7 +4,7 @@ A dynamic single-page restaurant website built with vanilla JavaScript and Webpa
 Built as part of The Odin Project JavaScript course.
 
 ## 🚀 Live Demo
-[View live site](#) <!-- add your link here -->
+[View live site](https://nikeemolo.github.io/restaurant-page/) <!-- add your link here -->
 
 ## 📋 About
 A fully JS-rendered restaurant website featuring a home hero page, 
